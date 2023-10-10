@@ -14,6 +14,16 @@ const clock = () => {
   ctx.fillStyle = 'f4f4f4';
   ctx.lineWidth = 5;
   ctx.lineCcap = 'round';
+
+  //draw the clock face/border
+  ctx.save();
+  ctx.beginPath();
+  ctx.lineWidth = 14;
+  ctx.strokeStyle = '#800000';
+  ctx.arc(0, 0, 142, 0, Math.PI * 2, true);
+  ctx.stroke();
+  ctx.restore();
+  ctx.restore(); //restore default state
 };
 
 clock();

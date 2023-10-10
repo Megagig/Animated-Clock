@@ -11,6 +11,25 @@ body {
   font-size: 18px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  width: 50%;
+  height: 50%;
+  position: center;
+  top: 1;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d24e4e;
+  margin-bottom: 20px;
+}
 button {
   background: #333;
   color: #fff;
